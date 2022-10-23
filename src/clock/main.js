@@ -23,10 +23,11 @@ class MyClock extends HTMLElement {
 `;
   get template() {
     return `
-${MyClock.styles}
-<div id="clock"></div>
-`;
+    ${MyClock.styles}
+    <div id="clock"></div>
+    `;
   }
+
   constructor() {
     super();
     this.attachShadow({ mode: "open" });

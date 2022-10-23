@@ -6,7 +6,6 @@ html {
 }
 body {
   font-family: Catamaran;
-  /* background: rgba(255, 255, 255, 0.25); */
   background: rgba(37, 33, 33, 0.143);
   min-height: 100vh;
   min-width: 100vw;
@@ -15,7 +14,8 @@ body {
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
-  color: #666;
+  --font-color: #666;
+  color: var(--font-color);
   display: flex;
   flex-direction: column;
 }
@@ -46,13 +46,26 @@ five-habit-tracker {
 }
 
 .clock-section {
-  width: 300px;
+  width: 335px;
 }
 
+#about .mySocial {
+  background: #ffffffa1;
+  border-radius: 4px;
+}
 #about .mySocial a {
   display: inline-block;
-  height: 2.5em;
   padding: 0 4px;
+}
+.mySocialInfo {
+  font-size: 14px;
+  color: var(--font-color);
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+.mySocialInfo a {
+  color: var(--font-color);
 }
 #about .mySocial a i {
   font-size: 24px;
